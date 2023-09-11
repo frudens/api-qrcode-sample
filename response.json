@@ -1,26 +1,3 @@
-# api-qrcode-sample
-
-## How to use
-
-### For terminal
-
-#### Request an API.
-
-- api_qrcode_sample.sh
-
-```shell
-API_KEY_DEMO="EeIfGWjTag6gIIqEF9FzR8CuZNmztSYY79aO8mSf"
-curl --request POST \
---header "Content-Type: application/json" \
---header "x-api-key: API_KEY_DEMO" \
---data '{"data":[ {"text": "AAA"}, {"text": "BBB"}, {"text": "CCC"} ]}' \
---location \
-"http://api.frudens.com/qrcode/2023-09/" > response.json
-```
-
-- response.json
-
-```json
 {
   "ok": true,
   "response": {
@@ -48,22 +25,3 @@ curl --request POST \
     }
   }
 }
-```
-
-#### Base64 decode the response JSON.
-
-- qrcode.sh (jq is required.)
-
-```shell
-cat response.json | jq -r .response.data[0].qrcode | base64 -d > qrcode.png
-```
-
-- qrcode.png
-
-![qrcode.png](qrcode.png)
-
-
-## Author
-
-- Teruhiro Komaki
-- https://mastodon.social/@komaki
