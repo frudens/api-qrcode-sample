@@ -2,7 +2,23 @@
 
 ## How to use
 
-### For terminal
+### From FileMaker App
+
+#### List View(Sample App)
+
+- Select Record. and Click "Get QRcode".
+
+![filemaker_list.png](image%2Ffilemaker_list.png)
+
+- Request API.
+
+![filemaker_response.png](image%2Ffilemaker_response.png)
+
+- ScreenShot
+
+![filemaker_script.png](image%2Ffilemaker_script.png)
+
+### From terminal
 
 #### Request an API.
 
