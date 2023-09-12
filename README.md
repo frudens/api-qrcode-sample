@@ -31,7 +31,7 @@ curl --request POST \
 --header "x-api-key: API_KEY_DEMO" \
 --data '{"data":[ {"text": "AAA"}, {"text": "BBB"}, {"text": "CCC"} ]}' \
 --location \
-"http://api.frudens.com/qrcode/2023-09/" > response.json
+"https://api.frudens.com/qrcode/2023-09/" > response.json
 ```
 
 - response.json
